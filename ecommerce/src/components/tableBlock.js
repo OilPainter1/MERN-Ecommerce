@@ -1,3 +1,4 @@
+import PlusIcon from "./plus-icon"
 function TableBlock(props) {
     return (
         <table className="table">
@@ -6,7 +7,12 @@ function TableBlock(props) {
                     <th scope="row">{props.sku}</th>
                     <td>{props.name}</td>
                     <td>{props.image}</td>
-                    <td>placeholder for future component</td>
+                    <td><PlusIcon>
+                        </PlusIcon>
+                    </td>
+                    <td>
+                        QOH
+                    </td>
                 </tr>
             </tbody>
         </table>
