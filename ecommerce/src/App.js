@@ -1,6 +1,6 @@
 import TableBlock from './components/tableBlock';
 import {useState} from 'react'
-
+import SearchBar from './components/searchBar';
 
 
 function App() {
@@ -8,7 +8,9 @@ function App() {
   const[isFirstTableRow] = useState(true)
 
   return (
+    
     <div className="App">
+      <SearchBar></SearchBar>
 
       <TableBlock 
         isFirstTableRow={isFirstTableRow}
