@@ -9,16 +9,17 @@ const productSchema = new Schema({
     type: String,
     required: true
   },
-  brand: [
+  brand:
     {
       type: String,
       required: true
     },
-  ],
-  sizes: {
+  sizes: [
+    {
     type: Number,
     required: true
-  },
+  }
+  ],
   category: [
     {
       type: String,
@@ -29,16 +30,14 @@ const productSchema = new Schema({
     type: String,
     required: true
   },
-  color: {
+  color: [
+    {
     type: String,
     required: true
-  },
+    }
+  ],
   price: {
     type: Number,
-    required: true
-  },
-  description: {
-    type: String,
     required: true
   },
   description: {

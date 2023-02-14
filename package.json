@@ -1,0 +1,19 @@
+{
+  "name": "tech-friends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node server.js ",
+  "scripts": {
+    "start": "node server.js --ignore ecommerce",
+    "develop": "concurrently \"cd server && npm run start\" \"cd ecommerce && npm start\"",
+    "install": "cd server && npm i && cd ../ecommerce && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd ecommerce && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
