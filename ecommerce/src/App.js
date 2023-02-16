@@ -16,28 +16,29 @@ function App() {
         isFirstTableRow={isFirstTableRow}
         name="test1"
         sku="1"
-        image="#1">
+        image="#1"
+        price = "10">
       </TableBlock>
-      
-     
 
       <TableBlock  
-       
         name="test2"
         sku="2"
-        image="#2">
+        image="#2"
+        price = "40">
       </TableBlock>
 
       <TableBlock 
         name="test3"
         sku="3"
-        image="#3">
+        image="#3"
+        price = "15">
       </TableBlock>
 
       <TableBlock
         name="test4"
         sku="4"
-        image="#4">    
+        image="#4"
+        price= "30">    
       </TableBlock>
 
     </div>
