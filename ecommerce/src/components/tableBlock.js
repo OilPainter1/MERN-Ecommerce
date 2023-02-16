@@ -4,6 +4,7 @@ function TableBlock(props) {
     if (props.isFirstTableRow) {
 
         return (
+            <>
             <table className="table">
                 <thead>
                     <tr>
@@ -30,6 +31,7 @@ function TableBlock(props) {
                     </tr>
                 </tbody>
             </table>
+           </> 
         )
     }else
     return (
