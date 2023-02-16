@@ -7,12 +7,14 @@ connection.once('open', async () => {
     try {
         await Product.deleteMany({})
         await User.deleteMany({})
-        await Product.create(productSeeds)
-        await User.create(userSeeds)
+        await Product.insertMany(productSeeds)
+        await User.insertMany(userSeeds)
 
         console.log('all done!')
-        Process.exit(0)
     } catch (err) {
+        console.log(err)
         throw err
+    } finally {
+    process.exit(0)
     }
 })
