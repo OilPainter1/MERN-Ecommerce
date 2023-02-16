@@ -52,7 +52,9 @@ function AddProductForm(props) {
                 <input type="text" className="form-control" id="productStock">
                 </input>
             </div>
-            <button type="submit" className="btn btn-primary" onSubmit={() =>props.setView("home")}>Submit</button>
+            <button type="submit" className="btn btn-primary" onSubmit={() =>{
+                props.setView("home")
+                }}>Submit</button>
         </form>
 
     </>
