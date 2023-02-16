@@ -2,6 +2,7 @@ import decode from 'jwt-decode'
 
 const lsKey = 'ecommercesecret'
 
+
 class AuthServide {
     getLoggedInUser() {
         return this.getToken() && decode(this.getToken())?.data || false
