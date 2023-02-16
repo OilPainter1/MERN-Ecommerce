@@ -8,7 +8,7 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [login, { loading, error }] = useMutation(LOGIN)
 
-    const hanldeSubmit = async e => {
+    const handleSubmit = async (e) => {
         e.prevent.Default()
         const { data } = await login({
             variables: {
