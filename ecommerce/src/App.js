@@ -1,6 +1,7 @@
 import TableBlock from './components/tableBlock';
 import {useState} from 'react'
 import SearchBar from './components/searchBar';
+import Header from './components/header';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
   return (
     
     <div className="App">
-      <SearchBar></SearchBar>
+
+      <Header />
 
       <TableBlock 
         isFirstTableRow={isFirstTableRow}
