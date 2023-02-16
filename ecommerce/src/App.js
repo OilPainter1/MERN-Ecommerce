@@ -1,47 +1,68 @@
 import TableBlock from './components/tableBlock';
 import {useState} from 'react'
 import SearchBar from './components/searchBar';
+import Header from './components/header';
+import Footer from './components/footer';
+import AddToTableButton from './components/addToTableButton';
+import AddProductForm from './views/AddProductForm';
+
+
 
 
 function App() {
   
   const[isFirstTableRow] = useState(true)
-
-  return (
+  const [view,setView] = useState("home")
+  if (view === "home"){
+    return (
     
+
     <div className="App">
-      <SearchBar></SearchBar>
 
-      <TableBlock 
-        isFirstTableRow={isFirstTableRow}
-        name="test1"
-        sku="1"
-        image="#1">
-      </TableBlock>
-      
-     
+      <Header />
+        <div className='container'>
+        <TableBlock 
+          isFirstTableRow={isFirstTableRow}
+          name="test1"
+          sku="1"
+          image="#1"
+          price = "10">
+        </TableBlock>
+  
+        <TableBlock  
+          name="test2"
+          sku="2"
+          image="#2"
+          price = "40">
+        </TableBlock>
+  
+        <TableBlock 
+          name="test3"
+          sku="3"
+          image="#3"
+          price = "15">
+        </TableBlock>
+  
+        <TableBlock
+          name="test4"
+          sku="4"
+          image="#4"
+          price= "30">    
+        </TableBlock>
+        
+        <AddToTableButton view={view} setView={setView}></AddToTableButton>
+        </div>
+      </div>
+)} else
+      if (view === "AddTableRow"){
+        return(
+        <>
+          <AddProductForm view={view} setView={setView}></AddProductForm>
+        
+        </>
+       )
+      }
 
-      <TableBlock  
-       
-        name="test2"
-        sku="2"
-        image="#2">
-      </TableBlock>
-
-      <TableBlock 
-        name="test3"
-        sku="3"
-        image="#3">
-      </TableBlock>
-
-      <TableBlock
-        name="test4"
-        sku="4"
-        image="#4">    
-      </TableBlock>
-
-    </div>
-  );
 }
 
 export default App;
