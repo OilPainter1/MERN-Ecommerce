@@ -2,6 +2,8 @@ import TableBlock from './components/tableBlock';
 import {useState} from 'react'
 import SearchBar from './components/searchBar';
 import AddToTableButton from './components/addToTableButton';
+import AddProductForm from './views/AddProductForm';
+
 
 
 function App() {
@@ -49,9 +51,9 @@ function App() {
       if (view === "AddTableRow"){
         return(
         <>
-        <h2>
-          add to table
-        </h2></>)
+          <AddProductForm view={view} setView={setView}></AddProductForm>
+        </>
+       )
       }
   
 }
