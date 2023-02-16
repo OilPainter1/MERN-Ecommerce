@@ -18,26 +18,10 @@ function AddProductForm(props) {
                 <input type="text" className="form-control" id="productBrand" placeholder="Adidas">
                 </input>
             </div>
-            <h5>Available Sizes:</h5>
-            <div className="fom-group">
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="Small"></input>
-                    <label className="form-check-label" htmlFor="defaultCheck1">
-                    Small
-                    </label>
-                </div>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="Medium"></input>
-                    <label className="form-check-label" htmlFor="defaultCheck1">
-                    Medium
-                    </label>
-                </div>
-                <div>
-                    <input className="form-check-input" type="checkbox" value="" id="Large"></input>
-                    <label className="form-check-label" htmlFor="defaultCheck1">
-                     Large
-                    </label>
-                </div>
+            <div className="form-group">
+                <label htmlFor="productSize">Sizes</label>
+                <input type="text" className="form-control" id="productSizes" placeholder="6,7,8">
+                </input>
             </div>
             <div className="form-group">
                 <label htmlFor="productCategory">Category</label>
