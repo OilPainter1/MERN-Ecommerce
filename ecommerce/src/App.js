@@ -1,8 +1,11 @@
 import TableBlock from './components/tableBlock';
 import {useState} from 'react'
 import SearchBar from './components/searchBar';
+import Header from './components/header';
+import Footer from './components/footer';
 import AddToTableButton from './components/addToTableButton';
 import AddProductForm from './views/AddProductForm';
+
 
 
 
@@ -13,9 +16,11 @@ function App() {
   if (view === "home"){
     return (
     
-      <div className="App">
-        <SearchBar></SearchBar>
-  
+
+    <div className="App">
+
+      <Header />
+        <div className='container'>
         <TableBlock 
           isFirstTableRow={isFirstTableRow}
           name="test1"
@@ -46,16 +51,21 @@ function App() {
         </TableBlock>
         
         <AddToTableButton view={view} setView={setView}></AddToTableButton>
+        </div>
+        <Footer />
       </div>
+      
 )} else
       if (view === "AddTableRow"){
         return(
         <>
           <AddProductForm view={view} setView={setView}></AddProductForm>
+        
         </>
+        
        )
       }
-  
+
 }
 
 export default App;
