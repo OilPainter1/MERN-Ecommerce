@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-const { User } = require('../models');
+const { User, Product } = require('../models');
+
 
 const resolvers = {
     Query: {
@@ -11,6 +12,10 @@ const resolvers = {
         user: async (parent, { username }) => {
             return await User.findOne({ username: username });
         },
+
+        products: async () => {
+            return await Product.find();
+        }
     },
 
     Mutation: {
