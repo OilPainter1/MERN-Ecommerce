@@ -7,7 +7,7 @@
     "start": "cd server && node server.js --ignore ecommerce",
     "develop": "concurrently \"cd server && npm run start\" \"cd ecommerce && npm start\"",
     "install": "cd server && npm i && cd ../ecommerce && npm i",
-    "seed": "cd server && npm run seed",
+    "seed": "cd server/seeds && node index.js",
     "build": "cd ecommerce && npm run build"
   },
   "keywords": [],

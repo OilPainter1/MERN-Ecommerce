@@ -5,11 +5,11 @@ const { User } = require('../models');
 const resolvers = {
     Query: {
         me: async () => {
-            return User.find();
+            return await User.find();
         },
 
         user: async (parent, { username }) => {
-            return User.findOne({ username: username });
+            return await User.findOne({ username: username });
         },
     },
 
