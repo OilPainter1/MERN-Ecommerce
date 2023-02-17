@@ -3,8 +3,8 @@ import SearchBar from './searchBar'
 
 const Header = () => {
     return (
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
+        <nav className="navbar bg-body-tertiary">
+            <div className="container-fluid">
           <a className="navbar-brand" href="#">eCommerce</a>
           <SearchBar />
         </div>
@@ -14,3 +14,4 @@ const Header = () => {
 }
 
 export default Header
+
