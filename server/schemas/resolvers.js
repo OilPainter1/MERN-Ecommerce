@@ -43,15 +43,8 @@ const resolvers = {
             return { token, user };
         },
 
-        saveProduct: async (parent, { args }) => {
-            return User.findOneAndUpdate(
-                { 
-                    $addToSet: { products: product }, 
-                },
-                {
-                    new: true
-                }
-            )
+        saveProduct: async (parent,  args) => {
+            return await Product.create(args.input)
         },
 
         removeProduct: async (parent, { args }) => {
