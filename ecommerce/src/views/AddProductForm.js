@@ -1,3 +1,10 @@
+
+import { useMutation, gql } from '@apollo/client'; 
+
+
+
+
+
 function AddProductForm(props) {
     return (
     <>
@@ -52,8 +59,20 @@ function AddProductForm(props) {
                 <input type="text" className="form-control" id="productStock">
                 </input>
             </div>
-            <button type="submit" className="btn btn-primary" onSubmit={() =>{
+            <button type="submit" className="btn btn-primary" onClick ={(event) =>{
                 props.setView("home")
+                //const {name,image,brand,size,category,style,color,price,description,stock}
+                const name = document.getElementById("productName").value
+                const image = document.getElementById("productImage").value
+                const brand = document.getElementById("productBrand").value
+                const size = document.getElementById("productSize").value
+                const category = document.getElementById("productCategory").value
+                const style = document.getElementById("productStyle").value
+                const color = document.getElementById("productColor").value
+                const price = document.getElementById("productPrice").value
+                const description = document.getElementById("productDescription").value
+                const stock = document.getElementById("productStock").value
+                console.log(document.getElementById("productStyle").value)
                 }}>Submit</button>
         </form>
 
