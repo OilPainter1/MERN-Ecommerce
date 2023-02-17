@@ -8,10 +8,11 @@ export const QUERY_USER = gql`
       email
       password
   }
+}
 `;
 
 export const QUERY_ALL_PRODUCTS = gql`
-{
+  query products {
   products {
     _id
     name
