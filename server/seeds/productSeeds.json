@@ -9,7 +9,7 @@
       "color": "Black, Aquatone",
       "price": "200.00",
       "description": "Always stay one step ahead in the Jordan Retro 5",
-      "quatityInStock": 11
+      "quantityInStock": 11
     },
     {
         "name": "Air Force 1",
@@ -21,7 +21,7 @@
         "color": "White, Black, Pink",
         "price": "130.00",
         "description": "Nike's classic sneaker",
-        "quatityInStock": 7
+        "quantityInStock": 7
       },
       {
         "name": "GEL-Excite 8",
@@ -33,7 +33,7 @@
         "color": "Pink, White",
         "price": "59.99",
         "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
-        "quatityInStock": 9
+        "quantityInStock": 9
       },
       {
         "name": "Garrett Cap Toe Oxford",
@@ -45,7 +45,7 @@
         "color": "Brown",
         "price": "109.95",
         "description": "Look good and feel good wearing these stylish Oxfords with cushioned memory foam insoles.",
-        "quatityInStock": 5
+        "quantityInStock": 5
       },
       {
         "name": "Air Max 90 Slide Sandals",
@@ -57,6 +57,6 @@
         "color": "Black, White",
         "price": "80.00",
         "description": "These comfortable slip-on sandals are inspired by the Air Max 90 and have padding in the upper strap for comfort.",
-        "quatityInStock": 3
+        "quantityInStock": 3
       }
   ]

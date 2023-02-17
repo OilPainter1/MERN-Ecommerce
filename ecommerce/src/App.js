@@ -52,7 +52,9 @@ function App() {
         
         <AddToTableButton view={view} setView={setView}></AddToTableButton>
         </div>
+        <Footer />
       </div>
+      
 )} else
       if (view === "AddTableRow"){
         return(
@@ -60,6 +62,7 @@ function App() {
           <AddProductForm view={view} setView={setView}></AddProductForm>
         
         </>
+        
        )
       }
 
