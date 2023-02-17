@@ -35,10 +35,11 @@ function App() {
             return (
               <TableBlock 
                 isFirstTableRow={isFirstTableRow}
-                name={product.name}
-                sku="1"
-                image="#1"
-                price = "10">
+                name= {product.name}
+                sku= {product._id}
+                image= {product.image}
+                price = {product.price}
+                quantityInStock= {product.quantityInStock}>
               </TableBlock>
             )
           })}
