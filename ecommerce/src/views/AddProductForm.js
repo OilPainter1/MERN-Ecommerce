@@ -30,14 +30,32 @@ function AddProductForm(props) {
     const[price,setPrice]=useState("")
     const[description,setDescription]=useState("")
     const[stock,setStock]=useState("")
-    console.log(name,image,brand,size,category,style,color,price,description,stock)
-
+    
     return (
     <>
         <h2>Add New Product</h2>
         <form onSubmit={(event) =>{
                 event.preventDefault()
-                mutateFunction({variables:{name,image,brand,size,category,style,color,price,description,stock}})
+                console.log(style,stock)
+                mutateFunction({
+                    variables:{
+                    product:{
+                        name:name,
+                        image:image,
+                        brand:brand,
+                        sizes:[parseFloat(size)],
+                        category:[category],
+                        style:style,
+                        color:[color],
+                        price: parseFloat(price),
+                        description: description,
+                        quantityInStock: parseInt(stock)
+                    }
+                        
+                }
+            }
+               )
+                props.setView("home")
                 console.log(style,stock)
                 //props.setView("home")
                 

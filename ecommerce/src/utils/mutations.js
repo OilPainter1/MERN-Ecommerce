@@ -26,16 +26,19 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_PRODUCT = gql`
-  mutation addProduct($name: String!, $image: String!, $brand: String!, $sizes: [Float], $category: [String], $style: String!, $color: [String], $price: Float, $description: String!, $quantityInStock: Int) {
-    addProduct(name: $name, image: $image, brand: $brand, sizes: $sizes, category: $category, style: $style, color: $color, price: $price, description: $description, quantityInStock: $quantityInStock) {
+  mutation saveProduct($product:SaveProductInput) {
+    saveProduct(input: $product) {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-      }
+        name
+        image
+        brand 
+        sizes
+        category
+        style
+        color
+        price
+        description
+        quantityInStock
     }
   }
 `;
