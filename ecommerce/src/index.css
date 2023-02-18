@@ -6,6 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 100px;
+  background-image: url('/src/assets/shoes-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  
+
 }
 
 code {
@@ -31,4 +38,10 @@ a.navbar-brand {
 
 body {
   background-color: rgb(199, 186, 210);
+}
+
+.prodForm {
+  background-color: rgb(121, 170, 170);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
