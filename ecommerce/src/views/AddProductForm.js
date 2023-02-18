@@ -1,6 +1,7 @@
 
 import { useMutation } from '@apollo/client'; 
 import { ADD_PRODUCT } from '../utils/mutations';
+import Footer from '../components/footer';
 
 
 
@@ -33,7 +34,7 @@ function AddProductForm(props) {
     
     return (
     <>
-        <h2>Add New Product</h2>
+        <h2 className='container'>Add New Product</h2>
         <form className="container prodForm" onSubmit={(event) =>{
                 event.preventDefault()
                 console.log(style,stock)
