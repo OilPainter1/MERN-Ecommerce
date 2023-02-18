@@ -40,9 +40,6 @@ a.navbar-brand {
   background-color: rgb(179, 230, 143);
 }
 
-body {
-  background-color: rgb(199, 186, 210);
-}
 
 .prodForm {
   background-color: rgb(121, 170, 170);
@@ -50,4 +47,12 @@ body {
   padding-bottom: 15px;
   border-radius: 25px;
   border: 2px solid black
+}
+
+#header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: rox;
+
 }
