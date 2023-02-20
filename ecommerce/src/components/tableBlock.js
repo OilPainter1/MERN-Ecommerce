@@ -1,6 +1,6 @@
 import PlusIcon from "./plus-icon"
 function TableBlock(props) {
-
+console.log(props)
     if (props.isFirstTableRow) {
 
         return (
@@ -22,9 +22,7 @@ function TableBlock(props) {
                         <td>{props.name}</td>
                         <td>{props.image}</td>
                         <td>{props.price}</td>
-                        <td>
-                            QOH
-                        </td>
+                        <td>{props.quantityInStock}</td>
                         <td><PlusIcon>
                             </PlusIcon>
                         </td>
@@ -43,9 +41,7 @@ function TableBlock(props) {
                     <td>{props.name}</td>
                     <td>{props.image}</td>
                     <td>{props.price}</td>
-                    <td>
-                        QOH
-                    </td>
+                    <td>{props.quantityInStock}</td>
                     <td><PlusIcon>
                         </PlusIcon>
                     </td>

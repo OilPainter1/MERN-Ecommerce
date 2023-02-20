@@ -5,6 +5,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 import AddToTableButton from './components/addToTableButton';
 import AddProductForm from './views/AddProductForm';
+import { QUERY_ALL_PRODUCTS } from './utils/queries';
+import { useQuery } from '@apollo/client'
 
 
 
@@ -13,6 +15,14 @@ function App() {
   
   const[isFirstTableRow] = useState(true)
   const [view,setView] = useState("home")
+
+  const { data, loading, error } =  useQuery(QUERY_ALL_PRODUCTS)
+  console.log(data, loading, error)
+
+  const products = data?.products || []
+
+
+
   if (view === "home"){
     return (
     
@@ -21,34 +31,18 @@ function App() {
 
       <Header />
         <div className='container'>
-        <TableBlock 
-          isFirstTableRow={isFirstTableRow}
-          name="test1"
-          sku="1"
-          image="#1"
-          price = "10">
-        </TableBlock>
-  
-        <TableBlock  
-          name="test2"
-          sku="2"
-          image="#2"
-          price = "40">
-        </TableBlock>
-  
-        <TableBlock 
-          name="test3"
-          sku="3"
-          image="#3"
-          price = "15">
-        </TableBlock>
-  
-        <TableBlock
-          name="test4"
-          sku="4"
-          image="#4"
-          price= "30">    
-        </TableBlock>
+          {products.map(product => {
+            return (
+              <TableBlock 
+                isFirstTableRow={isFirstTableRow}
+                name= {product.name}
+                sku= {product._id}
+                image= {product.image}
+                price = {product.price}
+                quantityInStock= {product.quantityInStock}>
+              </TableBlock>
+            )
+          })}
         
         <AddToTableButton view={view} setView={setView}></AddToTableButton>
         </div>
