@@ -6,6 +6,7 @@ function AddToTableButton(props) {
                 <i className="bi bi-plus-circle-fill"></i>
             </button>
         </div>
+        <p id="clickMe">Click Here To Add New Product</p>
     </div>)
 }
 

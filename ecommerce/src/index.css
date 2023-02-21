@@ -48,7 +48,7 @@ a.navbar-brand {
 
 
 .prodForm {
-  background-color: rgb(121, 170, 170);
+  background-color: rgb(193, 210, 210);
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 25px;
@@ -61,6 +61,7 @@ a.navbar-brand {
   display: flex;
   flex-direction: rox;
   color: white;
+  margin-bottom: 50px;
 
 }
 
@@ -71,8 +72,14 @@ a.navbar-brand {
 }
 
 h2.container {
-  background-color: rgb(121, 170, 170);
+  background-color: rgb(193, 210, 210);
   margin-top: 30px;
   border-radius: 25px;
   border: 2px solid black
+}
+
+#clickMe {
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 20px;
 }
