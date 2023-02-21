@@ -42,7 +42,7 @@ const typeDefs = gql`
     type Query {
         me: User
         user(username: String!): User
-        products: [Product]
+        products(searchTerm:String):[Product]
     }
 
     type Mutation {

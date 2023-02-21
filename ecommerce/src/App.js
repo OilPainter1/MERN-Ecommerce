@@ -12,11 +12,15 @@ import { useQuery } from '@apollo/client'
 
 
 function App() {
-  
+  const [searchTerm, setSearchTerm] = useState("")
   const[isFirstTableRow] = useState(true)
   const [view,setView] = useState("home")
-
-  const { data, loading, error } =  useQuery(QUERY_ALL_PRODUCTS)
+  console.log(searchTerm)
+  const { data, loading, error } =  useQuery(QUERY_ALL_PRODUCTS,{
+    variables: {
+      searchTerm
+    }
+  } )
   console.log(data, loading, error)
 
   const products = data?.products || []
@@ -29,7 +33,7 @@ function App() {
 
     <div className="App">
 
-      <Header />
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
         <div className='container'>
           {products.map(product => {
             return (
