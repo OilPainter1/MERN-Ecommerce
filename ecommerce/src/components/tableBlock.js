@@ -1,6 +1,6 @@
 import PlusIcon from "./plus-icon"
 function TableBlock(props) {
-console.log(props)
+
     if (props.isFirstTableRow) {
 
         return (
