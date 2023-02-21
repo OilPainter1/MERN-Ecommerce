@@ -12,8 +12,8 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_ALL_PRODUCTS = gql`
-  query products {
-  products {
+query products($searchTerm: String) {
+  products(searchTerm: $searchTerm) {
     _id
     name
     image

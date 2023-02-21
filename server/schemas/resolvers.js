@@ -13,7 +13,13 @@ const resolvers = {
             return await User.findOne({ username: username });
         },
 
-        products: async () => {
+        products: async (parent, args) => {
+            console.log(args.searchTerm)
+            if(args.searchTerm ) 
+            {
+                const searchTermRegex = {$regex:args.searchTerm, $options: 'i'}
+                return await Product.find({name: searchTermRegex})
+            }
             return await Product.find();
         }
     },
