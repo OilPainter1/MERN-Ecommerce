@@ -1,10 +1,13 @@
 import PlusIcon from "./plus-icon"
+import { Button } from 'react-bootstrap';
+
 function TableBlock(props) {
 
     if (props.isFirstTableRow) {
 
         return (
             <>
+            
             <table className="table">
                 <thead>
                     <tr>
@@ -30,6 +33,7 @@ function TableBlock(props) {
                         <td><PlusIcon>
                             </PlusIcon>
                         </td>
+
                     </tr>
                 </tbody>
             </table>

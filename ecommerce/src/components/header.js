@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const Header = ({searchTerm, setSearchTerm}) => {
 
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
     return (
         <nav className="navbar bg-body-tertiary" id="header">
@@ -23,11 +23,11 @@ const Header = ({searchTerm, setSearchTerm}) => {
 
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 
-            <Modal
+            {/* <Modal
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
-        aria-labelledby='signup-modal'></Modal>
+        aria-labelledby='signup-modal'></Modal> */}
         </div>
       </nav>
     )
