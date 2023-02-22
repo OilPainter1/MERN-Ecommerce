@@ -1,7 +1,7 @@
 [
     {
       "name": "Jordan Retro 5",
-      "image": "../ecommerce/src/assets/jordan-retro-5-black.webp",
+      "image": "https://media.finishline.com/i/finishline/DD0587_047_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
       "brand": "Jordan/Nike",
       "sizes": [9, 10, 11, 12],
       "catagory": "Mens",
@@ -13,19 +13,19 @@
     },
     {
         "name": "Air Force 1",
-        "image": "../ecommerce/src/assets/nike-air-force-one.jpeg",
+        "image": "https://media.finishline.com/i/finishline/DD8959_001_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
         "brand": "Nike",
         "sizes": [9, 10, 11, 12],
         "catagory": "Womens",
         "style": "Casual",
-        "color": "White, Black, Pink",
-        "price": "130.00",
+        "color": "Black",
+        "price": "112.00",
         "description": "Nike's classic sneaker",
         "quantityInStock": 7
       },
       {
         "name": "GEL-Excite 8",
-        "image": "../ecommerce/src/assets/asics-gel-excite-8.webp",
+        "image": "https://images.asics.com/is/image/asics/1011B036_002_SR_RT_GLB?$sfcc-product$",
         "brand": "Asics",
         "sizes": [9, 10, 11, 12],
         "catagory": "Womens",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Garrett Cap Toe Oxford",
-        "image": "../ecommerce/src/assets/stacy-abrams-garrett-cap-toe-oxford.jpeg",
+        "image": "https://marvel-b1-cdn.bc0a.com/f00000000114847/www.stacyadams.com/shop/rotate/25543-001/04.jpg",
         "brand": "Stacy Abrams",
         "sizes": [9, 10, 11, 12],
         "catagory": "Mens",
@@ -49,7 +49,7 @@
       },
       {
         "name": "Air Max 90 Slide Sandals",
-        "image": "../ecommerce/src/assets/nike-air-max-90-slides.jpeg",
+        "image": "https://media.finishline.com/i/finishline/BQ4635_002_P2?$default$&w=670&h=670&bg=rgb(237,237,237)",
         "brand": "Nike",
         "sizes": [9, 10, 11, 12],
         "catagory": "Mens",

@@ -42,3 +42,20 @@ export const ADD_PRODUCT = gql`
     }
   }
 `;
+
+export const REMOVE_PRODUCT = gql`
+mutation removeProduct($productId: String!) {
+    removeProduct(productId: $productId) {
+      _id
+        name
+        image
+        brand 
+        sizes
+        category
+        style
+        color
+        price
+        description
+        quantityInStock
+    }
+}`
