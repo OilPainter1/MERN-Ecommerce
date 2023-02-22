@@ -1,9 +1,17 @@
 # MERN-Ecommerce
 
-Ecommerce MERN app
+Ecommerce MERN app   
+ <p align="center">
+   <a href="https://github.com/OilPainter1/mern/blob/master/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+   </a>
+   <a href="https://circleci.com/gh/OilPainter1/mern">
+      <img src="https://circleci.com/gh/OilPainter1/mern.svg?style=svg" />
+   </a>
+</p>
 ## Description
 
-Our team has collabrated on buliding a single-page Mern-stack ecommerce application. Utilizing  MongoDB, a GraphQL API, Express.js, Node.js server, and React. implementing user authentication with JWT to build a user-focused platform. 
+Our team has collabrated on buliding a single-page Mern-stack ecommerce application. Utilizing  MongoDB, a GraphQL API, Express.js, Node.js server, and React. Implementing user authentication with JWT to build a user-focused platform. 
 
 # Getting Started with Create React App
 
