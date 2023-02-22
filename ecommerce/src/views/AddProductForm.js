@@ -35,7 +35,7 @@ function AddProductForm(props) {
     return (
     <>
         <h2 className='container'>Add New Product</h2>
-        <form className="container prodForm" onSubmit={(event) =>{
+        <form className="container prodForm" id="addForm" onSubmit={(event) =>{
                 event.preventDefault()
                 console.log(style,stock)
                 mutateFunction({
