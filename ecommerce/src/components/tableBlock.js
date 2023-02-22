@@ -8,9 +8,11 @@ function TableBlock(props) {
             <table className="table">
                 <thead>
                     <tr>
+                    <th scope="col"></th>
                     <th scope="col">SKU</th>
+                    <th scope="col">Brand</th>
                     <th scope="col">Item Name</th>
-                    <th scope="col">Image</th>
+                    <th scope="col">Color</th>
                     <th scope="col">Price</th>
                     <th scope="col">QOH</th>
                     <th scope="col">Add to QOH</th>
@@ -18,9 +20,11 @@ function TableBlock(props) {
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">{props.sku}</th>
+                        <th scope="row">{props.image}</th>
+                        <td>{props.sku}</td>
+                        <td>{props.brand}</td>
                         <td>{props.name}</td>
-                        <td>{props.image}</td>
+                        <td>{props.color}</td>
                         <td>{props.price}</td>
                         <td>{props.quantityInStock}</td>
                         <td><PlusIcon>
@@ -37,9 +41,11 @@ function TableBlock(props) {
         <table className="table">
             <tbody>
                 <tr>
-                    <th scope="row">{props.sku}</th>
+                    <th scope="row">{props.image}</th>
+                    <td>{props.sku}</td>
+                    <td>{props.brand}</td>
                     <td>{props.name}</td>
-                    <td>{props.image}</td>
+                    <td>{props.color}</td>
                     <td>{props.price}</td>
                     <td>{props.quantityInStock}</td>
                     <td><PlusIcon>

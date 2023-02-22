@@ -2,12 +2,12 @@
     {
       "name": "Jordan Retro 5",
       "image": "https://media.finishline.com/i/finishline/DD0587_047_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
-      "brand": "Jordan/Nike",
+      "brand": "Nike",
       "sizes": [9, 10, 11, 12],
       "catagory": "Mens",
       "style": "Basketball",
-      "color": "Black, Aquatone",
-      "price": "200.00",
+      "color": "Black / Aquatone",
+      "price": "199.99",
       "description": "Always stay one step ahead in the Jordan Retro 5",
       "quantityInStock": 11
     },
@@ -19,7 +19,7 @@
         "catagory": "Womens",
         "style": "Casual",
         "color": "Black",
-        "price": "112.00",
+        "price": "111.99",
         "description": "Nike's classic sneaker",
         "quantityInStock": 7
       },
@@ -30,7 +30,7 @@
         "sizes": [9, 10, 11, 12],
         "catagory": "Womens",
         "style": "Running",
-        "color": "Pink, White",
+        "color": "Pink / White",
         "price": "59.99",
         "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
         "quantityInStock": 9
@@ -54,8 +54,8 @@
         "sizes": [9, 10, 11, 12],
         "catagory": "Mens",
         "style": "Sandal",
-        "color": "Black, White",
-        "price": "80.00",
+        "color": "Black / White",
+        "price": "80.95",
         "description": "These comfortable slip-on sandals are inspired by the Air Max 90 and have padding in the upper strap for comfort.",
         "quantityInStock": 3
       }
