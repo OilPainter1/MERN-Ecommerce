@@ -36,10 +36,12 @@ function App() {
 
               <TableBlock
                 isFirstTableRow={isFirstTableRow}
-                name={product.name}
-                sku={product._id}
                 image={<img src={product.image} width={200} height={200} alt={product.name} />}
                 // image= {<img src={`./assets/${image}`} />}
+                sku={product._id}
+                brand={product.brand}
+                name={product.name}
+                color={product.color}
                 price={product.price}
                 quantityInStock={product.quantityInStock}>
               </TableBlock>
