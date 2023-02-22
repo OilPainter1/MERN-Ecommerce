@@ -34,7 +34,7 @@ function App() {
     <div className="App">
 
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-        <div className='container'>
+        <div className='container prodForm'>
           {products.map(product => {
             return (
               <TableBlock 
@@ -47,7 +47,6 @@ function App() {
               </TableBlock>
             )
           })}
-        
         <AddToTableButton view={view} setView={setView}></AddToTableButton>
         </div>
         <Footer />
