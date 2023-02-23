@@ -12,6 +12,30 @@
       "quantityInStock": 11
     },
     {
+      "name": "Jordan Retro 4",
+      "image": "https://rablove.com/wp-content/uploads/2023/02/426769060-1-sneaker2022-600x600.jpg",
+      "brand": "Nike",
+      "sizes": [9, 10, 11, 12],
+      "catagory": "Mens",
+      "style": "Basketball",
+      "color": "White / Black",
+      "price": "135.99",
+      "description": "Retro Jordan 4s",
+      "quantityInStock": 5
+    },
+    {
+      "name": "Jordan Retro 3",
+      "image": "https://cdn.flightclub.com/750/TEMPLATE/318273/1.jpg",
+      "brand": "Nike",
+      "sizes": [9, 10, 11, 12],
+      "catagory": "Womens",
+      "style": "Basketball",
+      "color": "White / Purple",
+      "price": "149.99",
+      "description": "Retro Jordan 3s",
+      "quantityInStock": 7
+    },
+    {
         "name": "Air Force 1",
         "image": "https://media.finishline.com/i/finishline/DD8959_001_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
         "brand": "Nike",
@@ -30,10 +54,22 @@
         "sizes": [9, 10, 11, 12],
         "catagory": "Womens",
         "style": "Running",
-        "color": "Pink / White",
+        "color": "Black / White",
         "price": "59.99",
         "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
         "quantityInStock": 9
+      },
+      {
+        "name": "Ultraboost 1.0 DNA Running Shoes",
+        "image": "https://media.finishline.com/i/finishline/HQ4200_036_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
+        "brand": "Adidas",
+        "sizes": [9, 10, 11, 12],
+        "catagory": "Mens",
+        "style": "Running",
+        "color": "Grey / White",
+        "price": "189.99",
+        "description": "Breathable mesh for lightweight feel",
+        "quantityInStock": 14
       },
       {
         "name": "Garrett Cap Toe Oxford",
