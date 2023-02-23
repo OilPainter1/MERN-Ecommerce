@@ -42,6 +42,14 @@ const resolvers = {
             return { token, user };
         },
 
+        addToStock: async (parent,{productId,stock}) => {
+            console.log(productId)
+            const changedProductStock = await Product.findOneAndUpdate(productId,{quantityInStock:stock},{new: true})
+           
+           
+            return changedProductStock
+        },
+
         addUser: async (parent, { username, email, password}) => {
             const user = await User.create({ username, email, password});
             const token = signToken(user);

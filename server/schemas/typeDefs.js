@@ -50,7 +50,10 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         saveProduct(input: SaveProductInput): Product
         removeProduct(productId: ID!): Product
+        addToStock(productId: ID!, stock: Int!): Product
     }
+
+  
 `;
 
 module.exports = typeDefs;

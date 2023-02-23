@@ -59,3 +59,14 @@ mutation removeProduct($productId: String!) {
         quantityInStock
     }
 }`
+
+export const ADD_TO_STOCK = gql`
+mutation addToStock($productId: ID!,$stock: Int!){
+  addToStock(productId: $productId, stock:$stock){
+    _id
+  }
+}
+
+
+
+`

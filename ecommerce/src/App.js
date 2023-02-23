@@ -10,9 +10,7 @@ import { useQuery } from '@apollo/client'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("")
-  const [isFirstTableRow] = useState(true)
   const [view, setView] = useState("home")
-  console.log(searchTerm)
   const { data, loading, error } = useQuery(QUERY_ALL_PRODUCTS, {
     variables: {
       searchTerm
@@ -33,7 +31,8 @@ function App() {
 
             return (
               <TableBlock
-                isFirstTableRow={isFirstTableRow}
+                key={product._id}
+                
                 image={<img src={product.image} width={200} height={200} alt={product.name} />}
                 // image= {<img src={`./assets/${image}`} />}
                 sku={product._id}
