@@ -74,6 +74,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 (https://github.com/pwgeipel)
 (https://github.com/Cobayomi)
-https://github.com/OilPainter1
-https://github.com/jwsadowski
-https://github.com/kyle188
+(https://github.com/OilPainter1)
+(https://github.com/jwsadowski)
+(https://github.com/kyle188)
