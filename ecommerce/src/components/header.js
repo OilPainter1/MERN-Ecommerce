@@ -2,6 +2,8 @@ import Auth from '../utils/auth'
 import SearchBar from './searchBar'
 import { Modal, Nav, Tab } from 'react-bootstrap'
 import { useState } from 'react'
+import LoginForm from './login'
+import SignUpForm from './signup'
 
 
 const Header = ({searchTerm, setSearchTerm}) => {
@@ -19,7 +21,8 @@ const Header = ({searchTerm, setSearchTerm}) => {
                 </>
               ) : (
                 <Nav.Link onClick={() => setShowModal(true)}
-                >Login/Sign Up</Nav.Link>)}
+                >Login/Sign Up</Nav.Link>)
+                }
 
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 
@@ -32,25 +35,32 @@ const Header = ({searchTerm, setSearchTerm}) => {
         <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
             <Modal.Title id='signup-modal'>
-              <Nav variant='pills'>
+              {/* <Nav variant='pills'>
                 <Nav.Item>
                   <Nav.Link eventKey='login'>Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
                 </Nav.Item>
-              </Nav>
+              </Nav> */}
+              
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Tab.Content>
-              {/* <Tab.Pane eventKey='login'>
-                <LoginForm handleModalClose={() => setShowModal(false)} />
+
+          <LoginForm/>
+              <SignUpForm/>
+
+            {/* <Tab.Content> */}
+
+            {/* <Tab.Pane eventKey='login'>
+                <Login handleModalClose={() => setShowModal(false)} />
               </Tab.Pane>
               <Tab.Pane eventKey='signup'>
-                <SignUpForm handleModalClose={() => setShowModal(false)} /> */}
-              {/* </Tab.Pane> */}
-            </Tab.Content>
+                <SignUp handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane> */}
+
+            {/* </Tab.Content> */}
           </Modal.Body>
         </Tab.Container>
       </Modal>
