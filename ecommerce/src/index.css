@@ -103,4 +103,16 @@ label {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
+  background-color: rgb(193, 210, 210);
+  padding-bottom: 40px;
+}
+
+.modal-header {
+  background-color: rgb(193, 210, 210);
+  border-bottom: rgb(193, 210, 210);
+  height: 20px;
+}
+
+.modal {
+  margin-top: 100px;
 }

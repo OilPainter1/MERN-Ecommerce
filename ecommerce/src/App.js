@@ -15,7 +15,6 @@ function App() {
       searchTerm,
     },
   });
-  console.log(data, loading, error);
 
   const products = data?.products || [];
 

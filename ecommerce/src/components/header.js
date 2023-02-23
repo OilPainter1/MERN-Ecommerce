@@ -1,6 +1,6 @@
 import Auth from '../utils/auth'
 import SearchBar from './searchBar'
-import { Modal, Nav, Tab } from 'react-bootstrap'
+import { Modal, Nav } from 'react-bootstrap'
 import { useState } from 'react'
 import LoginForm from './login'
 import SignUpForm from './signup'
@@ -27,47 +27,23 @@ const Header = ({searchTerm, setSearchTerm}) => {
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 
             <Modal
-        size='lg'
-        show={showModal}
-        onHide={() => setShowModal(false)}
-        aria-labelledby='signup-modal'>
-        {/* tab container to do either signup or login component */}
-        <Tab.Container defaultActiveKey='login'>
-          <Modal.Header closeButton>
-            <Modal.Title id='signup-modal'>
-              {/* <Nav variant='pills'>
-                <Nav.Item>
-                  <Nav.Link eventKey='login'>Login</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
-                </Nav.Item>
-              </Nav> */}
-              
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-
-          <LoginForm/>
-              <SignUpForm/>
-
-            {/* <Tab.Content> */}
-
-            {/* <Tab.Pane eventKey='login'>
-                <Login handleModalClose={() => setShowModal(false)} />
-              </Tab.Pane>
-              <Tab.Pane eventKey='signup'>
-                <SignUp handleModalClose={() => setShowModal(false)} />
-              </Tab.Pane> */}
-
-            {/* </Tab.Content> */}
-          </Modal.Body>
-        </Tab.Container>
-      </Modal>
-        </div>
-      </nav>
+              size='lg'
+              show={showModal}
+              onHide={() => setShowModal(false)}
+              aria-labelledby='signup-modal'>
+                <Modal.Header closeButton id="modalHeader">
+                  <Modal.Title id='signup-modal'>
+                    
+                  </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <LoginForm/>
+                    <SignUpForm/>
+                  </Modal.Body>
+            </Modal>
+          </div>
+        </nav>
     )
-
 }
 
 export default Header
