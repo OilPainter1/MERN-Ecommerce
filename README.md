@@ -3,7 +3,9 @@
 Ecommerce MERN app   
  <p align="center">
    <a href="https://github.com/OilPainter1/mern/blob/master/LICENSE">
-      <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+      <img src="https://img.shields.io/badge/License-MIT-green.svg" /><img src="![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)s">
+      <img src="https://badgen.net/#bundlephobia:~:text=version-,/npm/v/express,-version" />
+      <img src="">
    </a>
 </p>
 
@@ -20,6 +22,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm dev`
+
+
 
 ### `npm start`
 
