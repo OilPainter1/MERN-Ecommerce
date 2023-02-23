@@ -1,6 +1,5 @@
 import TableBlock from './components/tableBlock';
 import { useState } from 'react'
-import SearchBar from './components/searchBar';
 import Header from './components/header';
 import Footer from './components/footer';
 import AddToTableButton from './components/addToTableButton';
@@ -33,7 +32,6 @@ function App() {
           {products.map(product => {
 
             return (
-
               <TableBlock
                 isFirstTableRow={isFirstTableRow}
                 image={<img src={product.image} width={200} height={200} alt={product.name} />}

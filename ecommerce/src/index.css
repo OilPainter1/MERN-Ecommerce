@@ -64,6 +64,7 @@ a.navbar-brand {
   flex-direction: rox;
   color: white;
   margin-bottom: 50px;
+  width: 100%;
 
 }
 
@@ -97,3 +98,4 @@ h2.container {
 label {
   font-size: larger;
 }
+
