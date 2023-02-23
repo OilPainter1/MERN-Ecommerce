@@ -18,7 +18,8 @@ const Login = () => {
         })
         Auth.login(data.login.token)
     }
-    return (<form onSubmit={handleSubmit}>
+    return (
+      <form onSubmit={handleSubmit}>
         <div class="form-group">
           <h3>Login</h3>
           <label for="exampleInputEmail1">Email address</label>
@@ -29,19 +30,21 @@ const Login = () => {
             placeholder="Enter email" 
             value={email} 
             onChange={e => setEmail(e.target.value)}
-          />
-
-        
-          <small id="emailHelp" class="form-text text-muted"></small>
+          />        
+          <small id="emailHelp" class="form-text text-muted"/>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
-           value={password} 
-           onChange={e => setPassword(e.target.value)}></input>
+          <input 
+            type="password" 
+            class="form-control" 
+            id="exampleInputPassword1" 
+            placeholder="Password"
+            value={password} 
+            onChange={e => setPassword(e.target.value)}/>
         </div>
        
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-dark">Submit</button>
       </form>)
 }
 

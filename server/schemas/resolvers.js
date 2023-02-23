@@ -28,7 +28,7 @@ const resolvers = {
 
       if (!user) {
         throw new AuthenticationError("No user with this email found!");
-      }
+      }},
 
 
     Mutation: {
@@ -74,6 +74,6 @@ const resolvers = {
       );
     },
   },
-};
+}};
 
-module.exports = resolvers;
+module.exports = resolvers
