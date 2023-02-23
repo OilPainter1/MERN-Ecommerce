@@ -6,7 +6,9 @@ Ecommerce MERN app
       <img src="https://img.shields.io/badge/License-MIT-green.svg" />
    </a>
 </p>
-![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/architecture.png)
+
+## ![](https://raw.githubusercontent.com/IBM/pattern-utils/master/mern-starter/mern-architecture.png)
+
 ## Description
 
 Our team has collabrated on buliding a single-page Mern-stack ecommerce application. Utilizing  MongoDB, a GraphQL API, Express.js, Node.js server, and React. Implementing user authentication with JWT to build a user-focused platform. 
