@@ -69,3 +69,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Screenshots of the App 
 ![unnamed](https://user-images.githubusercontent.com/111473151/220814116-9a002ecd-1d6b-4ac9-b2da-6491e7d43d18.jpg)
+
+### Team Github Links 
+
+https://github.com/pwgeipel
+https://github.com/Cobayomi
+https://github.com/OilPainter1
+https://github.com/jwsadowski
+https://github.com/kyle188
