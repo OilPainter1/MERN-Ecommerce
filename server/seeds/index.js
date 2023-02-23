@@ -8,8 +8,10 @@ connection.once('open', async () => {
         await Product.deleteMany({})
         await User.deleteMany({})
         await Product.insertMany(productSeeds)
-        await User.insertMany(userSeeds)
-
+        
+        for (const userSeed of userSeeds) {
+            await User.create(userSeed)
+        }  
         console.log('all done!')
     } catch (err) {
         console.log(err)

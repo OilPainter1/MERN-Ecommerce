@@ -1,28 +1,30 @@
 import { useState } from "react"
 import { useMutation } from "@apollo/client"
 import Auth from '../utils/auth'
-import { LOGIN } from '../utils/mutations'
+import { ADD_USER } from '../utils/mutations'
 
-const Login = () => {
+const SignUpForm = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [login, { loading, error }] = useMutation(LOGIN)
+    const [signup, { loading, error }] = useMutation(ADD_USER)
 
     const handleSubmit = async (e) => {
         e.prevent.Default()
-        const { data } = await login({
+        const { data } = await signup({
             variables: {
                 email,
-                password,
+                password
             }
         })
-        Auth.login(data.login.token)
+        Auth.signup(data.signup.token)
     }
-    return (<form>
+    return (
+    <form>
         <div class="form-group">
+          <h3>Sign Up</h3>
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <small id="emailHelp" class="form-text text-muted"></small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
@@ -33,8 +35,8 @@ const Login = () => {
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-      </form>)
+      </form>
+      )
 }
 
-export default Login
-
+export default SignUpForm
