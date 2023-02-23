@@ -3,8 +3,7 @@
 Ecommerce MERN app   
  <p align="center">
    <a href="https://github.com/OilPainter1/mern/blob/master/LICENSE">
-      <a href= "(https://img.shields.io/badge/License-MIT-green.svg")>
-      <a href="![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white")
+      <a href= "(https://img.shields.io/badge/License-MIT-green.svg")>s
       <img src="https://badgen.net/#bundlephobia:~:text=version-,/npm/v/express,-version">
       </a>
    </a>
@@ -49,6 +48,20 @@ Runs just the server in development mode.<br>
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Languages & tools
+
+- [Node](https://nodejs.org/en/)
+
+- [Express](https://expressjs.com/)
+
+- [Mongoose](https://mongoosejs.com/)
+
+- [React](https://reactjs.org/)
+
+- [Webpack](https://webpack.js.org/)
+
+
 
 ### Deploy Server to [Heroku](https://dashboard.heroku.com/)
 
