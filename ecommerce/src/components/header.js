@@ -11,7 +11,7 @@ const Header = ({searchTerm, setSearchTerm}) => {
     return (
         <nav className="navbar bg-body-tertiary" id="header">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">eCommerce</a>
+            <a className="navbar-brand" href="/">Shoe-In</a>
             
             {/* {Auth.loggedIn() ? (
                 <>
