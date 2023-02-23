@@ -3,7 +3,7 @@
 Ecommerce MERN app   
  <p align="center">
    <a href="https://github.com/OilPainter1/mern/blob/master/LICENSE">
-      <a href= "(https://img.shields.io/badge/License-MIT-green.svg")>s
+      <a href= "https://img.shields.io/badge/License-MIT-green.svg">
       <img src="https://badgen.net/#bundlephobia:~:text=version-,/npm/v/express,-version">
       </a>
    </a>
@@ -77,3 +77,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 (https://github.com/OilPainter1)
 (https://github.com/jwsadowski)
 (https://github.com/kyle188)
+origin
