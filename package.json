@@ -4,7 +4,7 @@
   "description": "",
   "main": "node server.js ",
   "scripts": {
-    "start:production": "concurrently \"cd server && node server.js\" \"cd ecommerce && npm start\""
+    "start:production": "concurrently \"cd server && node server.js\" \"cd ecommerce && npm start\"",
     "start": "cd server && node server.js --ignore ecommerce",
     "develop": "concurrently \"cd server && npx nodemon server.js\" \"cd ecommerce && npm start\"",
     "install": "cd server && npm i && cd ../ecommerce && npm i",
