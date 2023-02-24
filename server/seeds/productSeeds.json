@@ -1,5 +1,17 @@
 [
     {
+      "name": "Jordan Retro 5",
+      "image": "https://media.finishline.com/i/finishline/DD0587_047_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
+      "brand": "Nike",
+      "sizes": [9, 10, 11, 12],
+      "catagory": "Mens",
+      "style": "Basketball",
+      "color": "Black / Aquatone",
+      "price": "199.99",
+      "description": "Always stay one step ahead in the Jordan Retro 5",
+      "quantityInStock": 11
+    },
+    {
       "name": "Air Force 1",
       "image": "https://media.finishline.com/i/finishline/DD8959_001_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
       "brand": "Nike",
@@ -22,18 +34,6 @@
       "price": "59.99",
       "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
       "quantityInStock": 9
-    },
-    {
-      "name": "Jordan Retro 5",
-      "image": "https://media.finishline.com/i/finishline/DD0587_047_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
-      "brand": "Nike",
-      "sizes": [9, 10, 11, 12],
-      "catagory": "Mens",
-      "style": "Basketball",
-      "color": "Black / Aquatone",
-      "price": "199.99",
-      "description": "Always stay one step ahead in the Jordan Retro 5",
-      "quantityInStock": 11
     },
     {
       "name": "Jordan Retro 4",
