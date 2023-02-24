@@ -1,5 +1,29 @@
 [
     {
+      "name": "Air Force 1",
+      "image": "https://media.finishline.com/i/finishline/DD8959_001_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
+      "brand": "Nike",
+      "sizes": [9, 10, 11, 12],
+      "catagory": "Womens",
+      "style": "Casual",
+      "color": "Black",
+      "price": "111.99",
+      "description": "Nike's classic sneaker",
+      "quantityInStock": 7
+    },
+    {
+      "name": "GEL-Excite 8",
+      "image": "https://images.asics.com/is/image/asics/1011B036_002_SR_RT_GLB?$sfcc-product$",
+      "brand": "Asics",
+      "sizes": [9, 10, 11, 12],
+      "catagory": "Womens",
+      "style": "Running",
+      "color": "Black / White",
+      "price": "59.99",
+      "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
+      "quantityInStock": 9
+    },
+    {
       "name": "Jordan Retro 5",
       "image": "https://media.finishline.com/i/finishline/DD0587_047_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
       "brand": "Nike",
@@ -35,30 +59,6 @@
       "description": "Retro Jordan 3s",
       "quantityInStock": 7
     },
-    {
-        "name": "Air Force 1",
-        "image": "https://media.finishline.com/i/finishline/DD8959_001_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
-        "brand": "Nike",
-        "sizes": [9, 10, 11, 12],
-        "catagory": "Womens",
-        "style": "Casual",
-        "color": "Black",
-        "price": "111.99",
-        "description": "Nike's classic sneaker",
-        "quantityInStock": 7
-      },
-      {
-        "name": "GEL-Excite 8",
-        "image": "https://images.asics.com/is/image/asics/1011B036_002_SR_RT_GLB?$sfcc-product$",
-        "brand": "Asics",
-        "sizes": [9, 10, 11, 12],
-        "catagory": "Womens",
-        "style": "Running",
-        "color": "Black / White",
-        "price": "59.99",
-        "description": "This trainer is designed with GEL technology that provides cushioning and rearfoot comfort",
-        "quantityInStock": 9
-      },
       {
         "name": "Ultraboost 1.0 DNA Running Shoes",
         "image": "https://media.finishline.com/i/finishline/HQ4200_036_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)",
