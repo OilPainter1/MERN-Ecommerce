@@ -21,16 +21,6 @@ const resolvers = {
       return await Product.find();
     },
   },
-
-  Mutation: {
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
-
-      if (!user) {
-        throw new AuthenticationError("No user with this email found!");
-      }},
-
-
     Mutation: {
         login: async (parent, { email, password }) => {
             console.log(email, password)
@@ -73,7 +63,6 @@ const resolvers = {
         { new: true }
       );
     },
-  },
 }};
 
 module.exports = resolvers
