@@ -77,4 +77,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 (https://github.com/OilPainter1)
 (https://github.com/jwsadowski)
 (https://github.com/kyle188)
-origin
