@@ -13,7 +13,7 @@ Ecommerce MERN app
 
 ## Description
 
-Our team has collabrated on buliding a single-page Mern-stack ecommerce application. Utilizing MongoDB, a GraphQL API, Express.js, Node.js server, and React. Implementing user authentication with JWT to build a user-focused platform.
+Our team has collabrated on building a single-page Mern-stack ecommerce application. Utilizing a GraphQL API, MongoDB, Express.js, Node.js server, and React. Implementing user authentication with JWT to build a user-focused platform.
 
 # Getting Started with Create React App
 
@@ -63,12 +63,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 
-### Deploy Server to [Heroku](https://dashboard.heroku.com/)
+### Deployed Link 
+[Heroku](https://shoe-in-188.herokuapp.com/)
 
--http://localhost:3000
 
-## Screenshots of the App 
-![unnamed](https://user-images.githubusercontent.com/111473151/220814116-9a002ecd-1d6b-4ac9-b2da-6491e7d43d18.jpg)
+## Usage 
+![demo](./ecommerce/public/shoe-in-screenshot.jpg)
 
 ### Team Github Links 
 
